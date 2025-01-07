@@ -1,0 +1,123 @@
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-image: url("https://www.pixground.com/japanese-cherry-blossom-landscape-4k-wallpaper-2/?download-img=4k");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    overflow-x: hidden;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23ff69b4'%3E%3Ccircle cx='12' cy='12' r='8'/%3E%3C/svg%3E"), auto;
+}
+
+.sparkle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    animation: sparkle 1.5s linear infinite;
+    pointer-events: none;
+}
+
+.search-container {
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    animation: container-pulse 3s ease-in-out infinite;
+}
+
+.search-bar {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #ff6b9d;
+    box-shadow: 0 0 15px rgba(255, 107, 157, 0.3);
+    outline: none;
+    transform: scale(1.02);
+}
+
+.glow-text {
+    text-shadow: 0 0 10px rgba(255, 107, 157, 0.5), 0 0 20px rgba(255, 107, 157, 0.3), 0 0 30px rgba(255, 107, 157, 0.2);
+    animation: text-glow 2s ease-in-out infinite;
+}
+
+.nerdy-bounce {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.search-button {
+    background: linear-gradient(45deg, #fcabb4, #e08bac);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.search-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 107, 157, 0.5);
+}
+
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recent-searches {
+    margin-top: 20px;
+    color: white;
+}
+
+.recent-searches ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recent-searches li {
+    margin: 5px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.recent-searches li:hover {
+    color: #ff6b9d;
+}
