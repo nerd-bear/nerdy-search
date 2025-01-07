@@ -1,4 +1,4 @@
-# Merdy Search
+# Nerdy Search
 
 A visual search-engine wrapper for cozy OperaGX vibes. This is a simple 220~ line project built with HTML, CSS, JS, and tailwind. The search query process is nearly nonexistent, all that happens is that your query gets redirected to Google. Your recent searches are saved in your cookies and can be viewed directly on the page.
 
